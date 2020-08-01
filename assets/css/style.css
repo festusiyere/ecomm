@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #EFEFEF;
+  color: #181822;
+  font-family: 'EB Garamond', sans-serif;
+  font-weight: 500;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+@media (min-width: 2000px) {
+
+  html{
+    font-size: 18px;
+  }
+    
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    html{
+      font-size: 14px;
+    }
+      
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    html{
+      font-size: 14px;
+    }
+      
+      
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    html{
+      font-size: 14px;
+    }
+          
+  }
+
+a {
+  text-decoration: none;
+  color: #181822;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #060608;
+  text-decoration: none;
+}
+
+header{
+    background-color: #D9DCE3;
+    padding: 0 5rem;
+    height: 4.5rem;
+}
+
+nav{
+    display: flex;
+    height: 4.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+._nav-lg{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+._nav-lg .logo img{
+    width: 70px;
+}
+
+.toggler{
+    display: none;
+}
+
+._nav-lg .acct{
+    margin-left: auto;
+}
+
+._nav-lg .acct a {
+    display: inline-block;
+    position: relative;
+}
+
+._nav-lg .acct a img{
+    width: 30px;
+    height: auto;
+}
+
+._nav-lg ._nav-list{
+    margin-left: 10rem;
+    display: flex;
+}
+
+._nav-lg ._nav-list ._nav{
+    margin-left: 1rem;
+}
+
+._nav-lg ._nav-list ._nav a{
+    font-size: 1.05rem;
+    font-weight: 500;   
+     position: relative;
+     display: inline-flex;
+}
+
+._nav-lg ._nav-list ._nav a::after{
+    content: "";
+    height: 1px;
+    border-radius: 3px;
+    background-color: rgba(252, 71, 72, .8);
+    bottom: 0px;
+    position: absolute;
+    width: 0%;
+    transition: .4s ease-in-out;
+}
+._nav-lg ._nav-list ._nav a.active::after{
+    width: 100%;
+}
+
+._nav-lg ._nav-list ._nav a:hover::after{
+    width: 100%;
+}

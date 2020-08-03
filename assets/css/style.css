@@ -592,7 +592,7 @@ input[type="color"] {
 }
 
 ._detl {
-    padding: 1rem 1rem;
+  padding: 1rem 1rem;
   overflow: auto;
 }
 
@@ -604,99 +604,98 @@ input[type="color"] {
 
 ._bck {
   color: #464646;
-    background: none;
-    height: 3em;
+  background: none;
+  height: 3em;
   padding: 5px 1em;
   border-radius: 2rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border: none;
   cursor: pointer;
 }
 
 ._bck:hover {
-    color: #464646;
-    background-color: #46464648;
-}  
+  color: #464646;
+  background-color: #46464648;
+}
 
 ._bck svg {
   margin-right: 3px;
 }
 
 ._pbh {
-    color: #1c78d3;
-    background: none;
-    height: 3em;
-    padding: 5px 1em;
-    border-radius: 2rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: .9rem;
-    border: none;
-    cursor: pointer;
+  color: #1c78d3;
+  background: none;
+  height: 3em;
+  padding: 5px 1em;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
 }
 
 ._pbh:hover {
-    color: #1c78d3;
-    background-color: rgba(28, 119, 211, 0.432);
-}
-  
-  ._pbh svg {
-    margin-right: 3px;
-  }
-
-  ._name{
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-top: 2rem;
-  }
-
-  ._cat{
-      text-transform: uppercase;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #8f8f8f;
-  }
-  
-  ._prc{
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      font-weight: bold;
-  }
-
-  .lbl{
-      font-size: .8rem;
-      color: #555555;
-      font-weight: bold;
-      margin-bottom: 1px;
-  }
-
-  ._val{
-      margin-top: 0;
-  }
-
-  ._clr{
-      margin-top: 5px;
-      width: 3rem;
-      height: 2rem;
-      border-radius: 2px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
+  color: #1c78d3;
+  background-color: rgba(28, 119, 211, 0.432);
 }
 
-._val._dsc{
-    font-size: .8rem;
-    font-weight: 400;
-    width: 90%;
+._pbh svg {
+  margin-right: 3px;
 }
 
+._name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+._cat {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+
+._prc {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.lbl {
+  font-size: 0.8rem;
+  color: #555555;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+._val {
+  margin-top: 0;
+}
+
+._clr {
+  margin-top: 5px;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+._val._dsc {
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 90%;
+}
 
 /* @media (min-width: 768px) and (max-width: 1024px) {
 }
@@ -708,48 +707,159 @@ input[type="color"] {
 }
  */
 @media (min-width: 768px) and (max-width: 1024px) {
-    ._bdy {
-        padding: 1rem 3rem;
-    }
+  ._bdy {
+    padding: 1rem 3rem;
+  }
 
-    ._bdy .form{
-        grid-template-columns: 2fr 3fr;
-    }
+  ._bdy .form {
+    grid-template-columns: 2fr 3fr;
+  }
 
-    ._prdt{
-        display: block;
-        height: auto;
-    }
+  ._prdt {
+    display: block;
+    height: auto;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    ._bdy {
-        padding: 1rem 1rem;
-    }
+  ._bdy {
+    padding: 1rem 1rem;
+  }
 
-    ._bdy .form{
-        display: block;
-    }
+  ._bdy .form {
+    display: block;
+  }
 
-    ._prdt{
-        display: block;
-        height: auto;
-    }
+  ._prdt {
+    display: block;
+    height: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  ._bdy {
+    padding: 1rem 1rem;
+  }
+
+  ._bdy .form {
+    display: block;
+  }
+
+  ._prdt {
+    display: block;
+    height: auto;
+  }
+}
+
+._prdts {
+  display: flex;
+  padding: 3rem 10rem;
+}
+
+._prdts .lists {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+._prdts .lists .item {
+  width: 350px;
+  height: 310px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow:  0px 0px 8px #c4c4c4;
+  margin-bottom: 4rem;
+}
+
+._prdts .lists .item .img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+._prdts .lists .item .img img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-10%);
+}
+
+._prdts .lists .item ._dtl {
+  padding: 2.3rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+._prdts .lists .item ._dtl ._nme {
+  font-size: 1.3rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+._prdts .lists .item ._prc {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8f8f8f;
+  margin-top: .1em;
+}
+
+._prdts .lists .item button {
+  height: 3em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 4em;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  top: -20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  background-color: #f4f4f4;
+}
+
+._prdts .lists .item button:hover{
+  background-color: #e4e4e4;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  ._prdts {
+    padding: 3rem 3rem;
+  }
+
+  ._prdts .lists .item {
+    width: 300px;
+    height: 260px;
+  }  
 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    ._bdy {
-        padding: 1rem 1rem;
-    }
+  ._prdts {
+    padding: 2rem 1rem;
+  }
 
-    ._bdy .form{
-        display: block;
-    }
-
-    ._prdt{
-        display: block;
-        height: auto;
-    }
+  ._prdts .lists {
+    justify-content: space-evenly;
+  }
+  
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  ._prdts {
+    padding: 2rem 1rem;
+  }
+  ._prdts .lists {
+    justify-content: space-evenly;
+  }
+  
+}
